@@ -3,9 +3,25 @@
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 35px;
   column-gap: 20px;
-  background-color: rgb(247, 247, 247);
 }
 
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1279px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .thumbnail-row {
   margin-bottom: 12px;
   position: relative;
@@ -35,7 +51,7 @@
 }
 
 .profile-picture {
-  width: 80%;
+  width: 75%;
   border-radius: 50%;
 }
 
